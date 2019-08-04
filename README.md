@@ -2,7 +2,7 @@
 
 [![Build Status](https://img.shields.io/badge/build-passing-success.svg)](https://img.shields.io/badge/build-passing-success.svg)
 
-Node Cookie Manager, read / write cookie from sqlite db
+Node Cookie Manager for Chrome, read / write cookie from sqlite db
 
 ## Install
 
