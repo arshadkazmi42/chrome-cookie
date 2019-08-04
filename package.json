@@ -1,0 +1,30 @@
+{
+  "name": "chrome-cookie",
+  "version": "1.0.0",
+  "description": "Node Chrome Cookie Manager",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arshadkazmi42/chrome-cookie.git"
+  },
+  "keywords": [
+    "node",
+    "cookie-manager",
+    "chrome-cookie",
+    "chrome-cookie-manager",
+    "chrome",
+    "sqlite"
+  ],
+  "author": "Arshad Kazmi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arshadkazmi42/chrome-cookie/issues"
+  },
+  "homepage": "https://github.com/arshadkazmi42/chrome-cookie#readme"
+}
