@@ -26,5 +26,9 @@
   "bugs": {
     "url": "https://github.com/arshadkazmi42/chrome-cookie/issues"
   },
-  "homepage": "https://github.com/arshadkazmi42/chrome-cookie#readme"
+  "homepage": "https://github.com/arshadkazmi42/chrome-cookie#readme",
+  "dependencies": {
+    "genql": "^1.0.2",
+    "sqlite3-promisify": "^1.0.0"
+  }
 }

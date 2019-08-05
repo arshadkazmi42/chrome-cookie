@@ -1,0 +1,55 @@
+{
+  "name": "cookies",
+  "foreign_key": "cookies_id",
+  "join_key": "cookies",
+  "columns": [
+    {
+      "name": "creation_utc"
+    },
+    {
+      "name": "host_key"
+    },
+    {
+      "name": "name"
+    },
+    {
+      "name": "value",
+      "defaultValue": ""
+    },
+    {
+      "name": "path"
+    },
+    {
+      "name": "expires_utc"
+    },
+    {
+      "name": "is_secure",
+      "defaultValue": ""
+    },
+    {
+      "name": "is_httponly",
+      "defaultValue": ""
+    },
+    {
+      "name": "last_access_utc"
+    },
+    {
+      "name": "has_expires"
+    },
+    {
+      "name": "is_persistent"
+    },
+    {
+      "name": "priority"
+    },
+    {
+      "name": "encrypted_value",
+      "type": "blob"
+    },
+    {
+      "name": "firstpartyonly",
+      "defaultValue": ""
+    }
+  ]
+}
+
