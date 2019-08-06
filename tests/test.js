@@ -45,6 +45,9 @@ describe('chrome cookie get and set operations', () => {
   it('should add new row in the database', async () => {
     await Cookie.setCookie(DATA);
     const rows = await Cookie.getCookie('arshad.com');
-    expect(rows).to.deep.equal(INSERTED);
+    expect(rows.length).to.equal(1);
+    expect(rows[0].creation_utc).to.deep.equal(INSERTED[0].creation_utc);
+    expect(rows[0].expires_utc).to.deep.equal(INSERTED[0].expires_utc);
+    expect(rows[0].host_key).to.deep.equal(INSERTED[0].host_key);
   });
 });
