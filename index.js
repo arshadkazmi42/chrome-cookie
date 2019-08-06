@@ -4,11 +4,11 @@ const { ValuesPointer, SelectFields, QueryValues } = require('genql');
 const { ChromeCookiePath, Util } = require('./lib');
 
 
-function Chrome() {
+function Chrome(path) {
   this.tableName = 'cookies';
   this.cookies = require('./cookie.json');
   this.fields =  SelectFields.get(this.cookies);
-  this.sqliteCrud = new SQLiteCrud(ChromeCookiePath.get());
+  this.sqliteCrud = new SQLiteCrud(path || ChromeCookiePath.get());
 }
 
 
