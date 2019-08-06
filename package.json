@@ -11,6 +11,10 @@
     "pretest": "eslint --ignore-path .gitignore .",
     "test": "node_modules/mocha/bin/mocha tests/test*.js"
   },
+  "files": [
+    "index.js",
+    "lib/"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/arshadkazmi42/chrome-cookie.git"
