@@ -16,20 +16,20 @@ Chrome.prototype.setCookie = async function(cookies) {
   const columnsCount = this.cookies.columns.length;
   const insertQuery = `INSERT INTO ${this.tableName} (${this.fields.join(', ')}) VALUES (${ValuesPointer.get(columnsCount)})`;
 
-  const queries = []
+  const queries = [];
   for (let cookie of cookies) {
     const values = QueryValues.get(this.cookies, cookie);
     queries.push(this.sqliteCrud.run(insertQuery, values));
   }
-
+  
   return await Promise.all(queries);
-}
+};
 
 
 Chrome.prototype.getCookie = async function(domain) {
   const query = `SELECT * from ${this.tableName} WHERE host_key like '%${domain}%'`;
   return Util.parse(this.cookies, await this.sqliteCrud.all(query));
-}
+};
 
 
 module.exports = Chrome;
