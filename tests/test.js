@@ -25,7 +25,7 @@ const DATA = [
 const INSERTED = [
   {
     'creation_utc': 'now',
-    'encrypted_value': '{\"type\":\"Buffer\",\"data\":[101,110,99,50]}',
+    'encrypted_value': '{"type":"Buffer","data":[101,110,99,50]}',
     'expires_utc': 'never',
     'firstpartyonly': 'yes',
     'has_expires': 'yes',
