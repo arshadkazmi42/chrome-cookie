@@ -16,7 +16,7 @@ npm i chrome-cookie
 
 const ChromeCookie = require('chrome-cookie');
 
-const cookie = await ChromeCookie.getCookie('https://github.com');
+const cookie = await new ChromeCookie().getCookie('https://github.com');
 console.log(cookie);
 
 

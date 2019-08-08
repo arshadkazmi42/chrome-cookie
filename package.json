@@ -13,7 +13,8 @@
   },
   "files": [
     "index.js",
-    "lib/"
+    "lib/",
+    "cookie.json"
   ],
   "repository": {
     "type": "git",
