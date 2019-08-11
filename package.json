@@ -1,6 +1,6 @@
 {
   "name": "chrome-cookie",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Node Chrome Cookie Manager",
   "main": "index.js",
   "directories": {
