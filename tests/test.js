@@ -6,9 +6,8 @@ const Cookie = new CookieCrud(__dirname + '/cookies.db');
 const DATA = [
   {
     'creation_utc': 'now',
-    'encrypted_value': 'enc2',
+    'encrypted_value': '{"type": "Buffer", "data": [101,110,99,50]}',
     'expires_utc': 'never',
-    'firstpartyonly': 'yes',
     'has_expires': 'yes',
     'host_key': 'arshad.com',
     'is_httponly': 'yes',
@@ -26,8 +25,7 @@ const INSERTED = [
   {
     'creation_utc': 'now',
     'encrypted_value': '{"type":"Buffer","data":[101,110,99,50]}',
-    'expires_utc': 'never',
-    'firstpartyonly': 'yes',
+    'expires_utc': 'never',    
     'has_expires': 'yes',
     'host_key': 'arshad.com',
     'is_httponly': 'yes',
@@ -38,6 +36,7 @@ const INSERTED = [
     'path': '/root',
     'priority': 'no',
     'value': 'kazmi',
+    'samesite': -1
   }
 ];
 
@@ -46,8 +45,6 @@ describe('chrome cookie get and set operations', () => {
     await Cookie.setCookie(DATA);
     const rows = await Cookie.getCookie('arshad.com');
     expect(rows.length).to.equal(1);
-    expect(rows[0].creation_utc).to.deep.equal(INSERTED[0].creation_utc);
-    expect(rows[0].expires_utc).to.deep.equal(INSERTED[0].expires_utc);
-    expect(rows[0].host_key).to.deep.equal(INSERTED[0].host_key);
+    expect(rows).to.deep.equal(INSERTED);
   });
 });
