@@ -24,11 +24,11 @@
     },
     {
       "name": "is_secure",
-      "defaultValue": ""
+      "defaultValue": 0
     },
     {
       "name": "is_httponly",
-      "defaultValue": ""
+      "defaultValue": 0
     },
     {
       "name": "last_access_utc"
@@ -47,8 +47,8 @@
       "type": "blob"
     },
     {
-      "name": "firstpartyonly",
-      "defaultValue": ""
+      "name": "samesite",
+      "defaultValue": -1
     }
   ]
 }
