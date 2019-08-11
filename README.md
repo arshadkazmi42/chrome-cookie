@@ -16,16 +16,15 @@ npm i chrome-cookie
 
 const ChromeCookie = require('chrome-cookie');
 
+// Reading cookie
 const cookie = await new ChromeCookie().getCookie('https://github.com');
-console.log(cookie);
 
-
+// Inserting cookie
 const DATA = [
   {
     'creation_utc': 'now',
     'encrypted_value': 'enc2',
     'expires_utc': 'never',
-    'firstpartyonly': 'yes',
     'has_expires': 'yes',
     'host_key': 'arshad.com',
     'is_httponly': 'yes',
@@ -36,6 +35,7 @@ const DATA = [
     'path': '/root',
     'priority': 'no',
     'value': 'kazmi',
+    'samesite': -1
   }
 ];
 
