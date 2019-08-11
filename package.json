@@ -1,6 +1,6 @@
 {
   "name": "chrome-cookie",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Node Chrome Cookie Manager",
   "main": "index.js",
   "directories": {
@@ -34,7 +34,7 @@
   },
   "homepage": "https://github.com/arshadkazmi42/chrome-cookie#readme",
   "dependencies": {
-    "genql": "^1.0.2",
+    "genql": "^1.0.3",
     "sqlite3-promisify": "^1.0.0"
   },
   "devDependencies": {
