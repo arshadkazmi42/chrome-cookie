@@ -47,7 +47,7 @@ await ChromeCookie.setCookie(DATA);
 - **`getCookie(path)`**
   - Returns cookie json from database for the input path
     - **Params**
-      - path (JSON)
+      - path (String)
 
 - **`setCookie(cookies)`**
   - Adds all the input cookies into the sqlite database
