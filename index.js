@@ -1,7 +1,8 @@
 const SQLiteCrud = require('sqlite3-promisify');
+const ChromeCookiePath = require('chrome-cookie-path');
 const { ValuesPointer, SelectFields, QueryValues } = require('genql');
 
-const { ChromeCookiePath, Util } = require('./lib');
+const { Util } = require('./lib');
 
 
 function Chrome(path) {
