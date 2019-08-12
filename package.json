@@ -35,6 +35,7 @@
   },
   "homepage": "https://github.com/arshadkazmi42/chrome-cookie#readme",
   "dependencies": {
+    "chrome-cookie-path": "^1.0.0",
     "genql": "^1.0.4",
     "sqlite3-promisify": "^1.0.0"
   },
