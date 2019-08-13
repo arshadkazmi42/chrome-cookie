@@ -15,9 +15,10 @@ npm i chrome-cookie
 ```javascript
 
 const ChromeCookie = require('chrome-cookie');
+const CCookie = new ChromeCookie();
 
 // Reading cookie
-const cookie = await new ChromeCookie().getCookie('https://github.com');
+const cookie = await CCookie.getCookie('https://github.com');
 
 // Inserting cookie
 const DATA = [
@@ -39,7 +40,7 @@ const DATA = [
   }
 ];
 
-await ChromeCookie.setCookie(DATA);
+await CCookie.setCookie(DATA);
 ```
 
 ## API
@@ -53,6 +54,12 @@ await ChromeCookie.setCookie(DATA);
   - Adds all the input cookies into the sqlite database
     - **Params**
       - cookies (Array of cookies object)
+
+- **`removeCookie(domain)`**
+  - Removes all records matching the domain.
+  - > It uses `like` condition (`%domain%`) so anything matching the pattern will be removed
+    - **Params**
+      - path (String)
 
 ## Contributing
 
