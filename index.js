@@ -33,4 +33,10 @@ Chrome.prototype.getCookie = async function(domain) {
 };
 
 
+Chrome.prototype.removeCookie = async function(domain) {
+  const query = `DELETE from ${this.tableName} WHERE host_key like '%${domain}%'`;
+  return await this.sqliteCrud.run(query);
+};
+
+
 module.exports = Chrome;

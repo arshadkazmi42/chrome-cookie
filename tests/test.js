@@ -43,8 +43,11 @@ const INSERTED = [
 describe('chrome cookie get and set operations', () => {
   it('should add new row in the database', async () => {
     await Cookie.setCookie(DATA);
-    const rows = await Cookie.getCookie('arshad.com');
+    let rows = await Cookie.getCookie('arshad.com');
     expect(rows.length).to.equal(1);
     expect(rows).to.deep.equal(INSERTED);
+    await Cookie.removeCookie('arshad.com');
+    rows = await Cookie.getCookie('arshad.com');
+    expect(rows.length).to.equal(0);
   });
 });
