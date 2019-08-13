@@ -2,12 +2,12 @@ const SQLiteCrud = require('sqlite3-promisify');
 const ChromeCookiePath = require('chrome-cookie-path');
 const { ValuesPointer, SelectFields, QueryValues } = require('genql');
 
-const { Util } = require('./lib');
+const { CONSTANTS, Util } = require('./lib');
 
 
 function Chrome(path) {
-  this.tableName = 'cookies';
-  this.cookies = require('./cookie.json');
+  this.tableName = CONSTANTS['TABLE_NAME'];
+  this.cookies = require(CONSTANTS['MODEL_PATH']);
   this.fields =  SelectFields.get(this.cookies);
   this.sqliteCrud = new SQLiteCrud(path || ChromeCookiePath.get());
 }
