@@ -1,6 +1,6 @@
 # chrome-cookie
 
-[![Build Status](https://img.shields.io/badge/build-passing-success.svg)](https://img.shields.io/badge/build-passing-success.svg)
+[![Build Status](https://api.travis-ci.com/arshadkazmi42/chrome-cookie.svg?branch=master)](https://api.travis-ci.com/arshadkazmi42/chrome-cookie)
 
 Node Cookie Manager for Chrome, read / write cookie from sqlite db
 
