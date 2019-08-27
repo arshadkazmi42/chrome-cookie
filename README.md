@@ -18,7 +18,7 @@ const ChromeCookie = require('chrome-cookie');
 const CCookie = new ChromeCookie();
 
 // Reading cookie
-const cookie = await CCookie.getCookie('https://github.com');
+const cookie = await CCookie.getCookie('arshad.com');
 
 // Inserting cookie
 const DATA = [
